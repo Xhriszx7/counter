@@ -1,0 +1,51 @@
+/* Da um simples reset nas estilizações padrão.*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+/*Organiza, poe sombra, altera cor de fundo, cor das letras e tamanho e "grossura" delas. Adiciona espaçamento entre as divs do main.*/
+#main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+/*Coloca sombreamento no Título e deixa os cantos 10px mais arredondados.*/
+#title {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/*Aumenta fonte, adiciona uma borda e seta o tamanho total da div para a borda parecer maior e alinhar com os botões.*/
+#res {
+    font-size: 100pt;
+    width: 2em;
+    border-bottom: 0.02em solid #333;
+}
+/*Estiliza todos os botões com a classe: selects*/
+.selects {
+    width: 6.5em;
+    height: 2em;
+    border: 2px solid #333;;
+    border-radius: 5px;
+    box-shadow: 0.1em 0.1em 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/*Adiciona uma função nos botões que ao passar com o mouse em cima eles teriam sua cor de fundo alterada e adiciona uma leve transição para ficar mais fluido.*/
+.selects:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.15s ease-in-out;
+}
