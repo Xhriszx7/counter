@@ -25,7 +25,9 @@ countDecrement.addEventListener("click", function() {
         countValue -= 1
         count.innerHTML = countValue
     } else {
+        countValue = 0
         alert("O valor não pode ser menor que 0")
+        count.innerHTML = countValue
     }
 });
 
@@ -49,7 +51,9 @@ countDecrement2.addEventListener("click", function() {
         count.innerHTML = countValue
     }
     else {
+        countValue = 0
         alert("O valor não pode ser menor que 0")
+        count.innerHTML = countValue
     }
 })
 
@@ -65,7 +69,9 @@ countDecrement4.addEventListener("click", function () {
         countValue -= 4
         count.innerHTML = countValue
     } else {
+        countValue = 0
         alert("O valor não pode ser menor que 0")
+        count.innerHTML = countValue
     }
 })
 
@@ -81,7 +87,9 @@ countDecrement6.addEventListener("click", function () {
         countValue -= 6
         count.innerHTML = countValue
     } else {
+        countValue = 0
         alert("O valor não pode ser menor que 0")
+        count.innerHTML = countValue
     }
 })
 
@@ -97,7 +105,9 @@ countDecrementResSubmit.addEventListener("click", function() {
         countValue -= parseInt(countDecrementRes.value)
     count.innerHTML = countValue
     } else {
+        countValue = 0
         alert("O valor não pode ser menor que 0")
+        count.innerHTML = countValue
     }
     
 })
